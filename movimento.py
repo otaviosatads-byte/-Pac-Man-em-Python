@@ -1,6 +1,5 @@
 import pygame          
 def interacoes(poder, pacmanY, pacmanX, blinkY, blinkX, pinkY, pinkX, inkyY, inkyX, clydY, clydX, blink, pink, inky, clyd, blinkVivo, pinkVivo, inkyVivo, clydVivo, vidaAtual, pontos):
-    comerFantasma = pygame.mixer.Sound(r"audios\13. PAC-MAN - Eating The Ghost.mp3")
     #verefica se os fantasmas pegaram o pacman    
     if poder == False:
         if (blinkY == pacmanY and blinkX == pacmanX )and blinkVivo == True:
@@ -34,21 +33,17 @@ def interacoes(poder, pacmanY, pacmanX, blinkY, blinkX, pinkY, pinkX, inkyY, ink
         if blinkX == pacmanX and blinkY == pacmanY and blinkVivo == True:
             blinkVivo = False
             pontos += 200
-            comerFantasma.play()
         if pinkX == pacmanX and pinkY == pacmanY and pinkVivo == True:
             pinkVivo = False
             pontos += 200
-            comerFantasma.play()
 
         if inkyX == pacmanX and inkyY == pacmanY and inkyVivo == True:
             inkyVivo = False
             pontos += 200
-            comerFantasma.play()
 
         if clydX == pacmanX and clydY == pacmanY and clydVivo == True:
             clydVivo =  False
             pontos += 200
-            comerFantasma.play()
             
     #transforma os fantasmas comido em apenas olhos                
     if blinkVivo == False:
@@ -64,8 +59,6 @@ def interacoes(poder, pacmanY, pacmanX, blinkY, blinkX, pinkY, pinkX, inkyY, ink
 
 def movientacao(opcao, pacmanY, pacmanX, pacman, pastilhas, labirinto, pontos, poder):
     # A movimentacao que pacman fez de acordo com o usuario
-    somMastigar = pygame.mixer.Sound(r"audios\munch_1.mp3")
-
     
     if opcao == 'w' or opcao == 'W':
         if labirinto[pacmanY - 1][pacmanX] == '#':
