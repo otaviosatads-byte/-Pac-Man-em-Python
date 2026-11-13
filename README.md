@@ -36,22 +36,6 @@ Instale as dependências utilizadas:
 pip install pygame WConio2
 ```
 
-## ▶️ Como executar
-
-1. Clone o repositório:
-
-   ```bash
-   git clone URL_DO_REPOSITORIO
-   ```
-
-2. Entre na pasta do projeto.
-
-3. Execute o arquivo principal:
-
-   ```bash
-   python main.py
-   ```
-
 ## 🎯 Objetivo
 
 Aplicar conhecimentos de programação Python no desenvolvimento de um jogo interativo, explorando lógica de movimentação, gerenciamento de estados, interação entre objetos e organização de um projeto de maior complexidade.
