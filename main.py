@@ -115,8 +115,6 @@ while opcaoMenu != 0:
                     temporizador = 0
                     vidaAtual = True
                     vidas -= 1
-                    somInicio = pygame.mixer.Sound(r'audios\02. Start Music.mp3')
-                    somMorte =  pygame.mixer.Sound(r"audios\13. PAC-MAN - Eating The Ghost.mp3")
                     pacmanX = 13
                     pacmanY = 23
 
@@ -167,7 +165,6 @@ while opcaoMenu != 0:
                     mostrarVidas(vidas, pontos)
                     loop = 0
                     opcao = 'a'
-                    somInicio.play()
                     time.sleep(4)
     
                 else:
@@ -274,10 +271,8 @@ while opcaoMenu != 0:
                         temporizador += 1
                         
                     pastilhas = contadorPastilhas(pastilhas, labirinto)
-                # Som do quando o pacman morre
                     if vidaAtual == False:
                         mostrarLabirinto(labirinto)
-                        somMorte.play()
                         time.sleep(3)
                     print(temporizador)
                     print(blinkAtual, pinkAtual, inkyAtual, clydAtual)
@@ -351,8 +346,6 @@ while opcaoMenu != 0:
                     temporizador = 0
                     vidaAtual = True
                     vidas -= 1
-                    somInicio = pygame.mixer.Sound(r'audios\02. Start Music.mp3')
-                    somMorte =  pygame.mixer.Sound(r"audios\15. Fail.mp3")
                     pacmanX = 13
                     pacmanY = 23
 
@@ -403,7 +396,6 @@ while opcaoMenu != 0:
                     mostrarVidas(vidas, pontos)
                     loop = 0
                     opcao = 'a'
-                    somInicio.play()
                     time.sleep(4)
     
                 else:
@@ -510,10 +502,8 @@ while opcaoMenu != 0:
                         temporizador += 1
                         
                     pastilhas = contadorPastilhas(pastilhas, labirinto)
-                # Som do quando o pacman morre
                     if vidaAtual == False:
                         mostrarLabirinto(labirinto)
-                        somMorte.play()
                         time.sleep(3)
                     print(temporizador)
                     print(blinkAtual, pinkAtual, inkyAtual, clydAtual)
